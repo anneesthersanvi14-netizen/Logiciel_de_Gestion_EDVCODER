@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>EDVCODER FINANCE</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div id="login">
+      <div class="card">
+        <div class="logo"><i>€</i>EDVCODER FINANCE</div>
+        <p class="mu">Connectez-vous pour accéder à la gestion financière.</p>
+        <div class="fg">
+          <label>E-mail<input id="le" value="tresorier@edvcoder.ci" /></label
+          ><label
+            >Mot de passe<input id="lp" type="password" value="demo1234"
+          /></label>
+        </div>
+        <button class="b" style="width: 100%" onclick="lg()">
+          Se connecter
+        </button>
+      </div>
+    </div>
+    <aside class="side" id="sd">
+      <div class="logo"><i>€</i>EDVCODER</div>
+      <nav id="nv"></nav>
+    </aside>
+    <div class="main">
+      <div class="top">
+        <div style="display: flex; gap: 12px; align-items: center">
+          <button class="ib" id="bur" onclick="sd.classList.toggle('open')">
+            ☰</button
+          ><span class="mu" id="bc"></span>
+        </div>
+        <div style="display: flex; gap: 10px; align-items: center">
+          <button class="ib" onclick="go('notifs')" title="Notifications">
+            🔔
+          </button>
+          <div class="av" title="Trésorier">TR</div>
+        </div>
+      </div>
+      <div id="v"></div>
+    </div>
+    <div id="modal"><div id="mb"></div></div>
+    <div id="toast"></div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
